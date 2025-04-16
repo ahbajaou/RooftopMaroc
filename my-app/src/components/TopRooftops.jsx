@@ -1,57 +1,74 @@
 import React, { useState } from 'react';
-import { rooftops } from '../data/rooftops';
+import { rooftops } from '../data/rooftops'; // Import the rooftops data
 
-export default function TopRooftops() {
-  const [activeFilter, setActiveFilter] = useState('all');
-  
-  const filters = ['all', 'chill', 'romantic', 'view', 'food'];
+const TopRooftops = () => {
+  const [activeTab, setActiveTab] = useState('All');
 
-  const filteredRooftops = activeFilter === 'all' 
-    ? rooftops 
-    : rooftops.filter(spot => spot.vibes.includes(activeFilter));
+  const categories = ['All', 'Marrakech', 'Essaouira'];
+
+  const filteredRooftops =
+  activeTab === 'All'
+    ? rooftops
+    : rooftops.filter((rooftop) => rooftop.category === activeTab);
 
   return (
     <section className="py-16 px-4 md:px-8">
       <h2 className="text-3xl font-bold text-center mb-8">Top Rooftops</h2>
-      
-      <div className="flex gap-2 justify-center mb-8">
-        {filters.map(filter => (
+
+      {/* Tabs for Filtering */}
+      <div className="flex gap-4 justify-center mb-8 flex-wrap">
+        {categories.map((category) => (
           <button
-            key={filter}
-            onClick={() => setActiveFilter(filter)}
+            key={category}
+            onClick={() => setActiveTab(category)}
             className={`px-4 py-2 rounded-full capitalize ${
-              activeFilter === filter 
-                ? 'bg-orange-500 text-white' 
+              activeTab === category
+                ? 'bg-blue-500 text-white'
                 : 'bg-gray-100 hover:bg-gray-200'
             }`}
           >
-            {filter}
+            {category}
           </button>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredRooftops.map(spot => (
-          <div key={spot.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img 
-              src={spot.image} 
-              alt={spot.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{spot.name}</h3>
-              <p className="text-gray-600 mb-4">{spot.description}</p>
-              <div className="flex justify-between items-center">
-                <span className="text-gray-500">{spot.location}</span>
-                <div className="flex items-center">
-                  <span className="text-yellow-500">★</span>
-                  <span className="ml-1">{spot.rating}</span>
-                </div>
-              </div>
+      {/* Rooftop Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredRooftops.map((rooftop) => (
+          <div
+            key={rooftop.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            {/* Rooftop Image */}
+            <div className="h-48">
+              <img
+                src={rooftop.image}
+                alt={rooftop.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Card Content */}
+            <div className="p-4">
+              <h3 className="text-lg font-bold">{rooftop.name}</h3>
+              <p className="text-gray-600 text-sm">{rooftop.description}</p>
+              <p className="text-gray-500 text-sm mt-2">Location: {rooftop.location}</p>
+              <p className="text-gray-500 text-sm">Rating: {rooftop.rating} ⭐</p>
+              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Explore
+              </button>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Plan Your Trip Button */}
+      <div className="text-center mt-8">
+        <button className="px-6 py-3 bg-green-500 text-white rounded-lg text-lg hover:bg-green-600">
+          Plan Your Trip
+        </button>
+      </div>
     </section>
   );
-}
+};
+
+export default TopRooftops;

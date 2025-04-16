@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Menu, X } from 'lucide-react';
 
-import  Logo  from '../assets/logo.png';
+import  Logo  from '../assets/logo1.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
