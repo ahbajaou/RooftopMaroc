@@ -13,7 +13,6 @@ function App() {
       <Hero />
       <TopRooftops />
       {/* <Stories /> */}
-      <Newsletter />
       <Footer />
     </div>
   );

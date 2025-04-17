@@ -10,6 +10,28 @@ import img9 from "../assets/coco.jpg";
 import img10 from "../assets/elkennaria.jpg";
 import img11 from "../assets/mainsonrains.jpg";
 import img12 from "../assets/dune.jpg";
+import img13 from "../assets/essa1.jpg";
+import img14 from "../assets/essa2.jpg";
+import img15 from "../assets/essa3.jpg";
+import img16 from "../assets/essa4.jpg";
+import img17 from "../assets/essa5.jpg"; 
+import img18 from "../assets/essa6.jpg";
+import img19 from "../assets/essa7.jpg";
+import img20 from "../assets/essa8.jpg";
+import img21 from "../assets/essa9.jpg";
+import img22 from "../assets/essa10.jpg";
+import img23 from "../assets/essa11.jpg";
+import img24 from "../assets/essa12.jpg";
+import img25 from "../assets/essa13.jpg";
+import img26 from "../assets/essa14.jpg";
+import img27 from "../assets/essa15.jpg";
+// import img28 from "../assets/essa16.jpg";
+// import img29 from "../assets/essa17.jpg";
+// import img30 from "../assets/essa18.jpg";
+// import img31 from "../assets/essa19.jpg";
+// import img32 from "../assets/essa20.jpg";
+
+
 
 export const rooftops = [
   {
@@ -167,5 +189,174 @@ export const rooftops = [
     takeaway: true,
     delivery: false,
     image: img12,
+  },
+  {
+    id: 13,
+    name: "The Hungry Nomad Rooftop Essaouira",
+    location: "34 Rue El Abbana",
+    category: "Essaouira",
+    rating: 4.5,
+    reviews: 539,
+    description: "The staff were fantastic and the views from the rooftop were stunning!",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img13,
+  },
+  {
+    id: 14,
+    name: "The Roof Top",
+    location: "60 Av. Mohammed V",
+    category: "Essaouira",
+    rating: 3.9,
+    reviews: 365,
+    description: "Relaxing music, great food and incredible view!",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img14,
+  },
+  {
+    id: 15,
+    name: "The Rooftop Essaouira - فوق السطح",
+    location: "264 lot",
+    category: "Essaouira",
+    rating: 4.9,
+    reviews: 40,
+    description: "The roof terrace is really amazing, private and a great place to chill.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img15,
+  },
+  {
+    id: 16,
+    name: "KSOU Restaurant Rooftop",
+    location: "4 Av. du Caire",
+    category: "Essaouira",
+    rating: 4.5,
+    reviews: 600,
+    description: "Great food on a lovely terrace facing the ocean and the city roofs.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img16,
+  },
+  {
+    id: 17,
+    name: "Alma",
+    location: "Complexe Bin Al Aswar, Bab Sba",
+    category: "Essaouira",
+    rating: 4.7,
+    reviews: 195,
+    description: "The service was top-10, we went for drinks, the live band was exceptional.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img17,
+  },
+  {
+    id: 18,
+    name: "La Smala Rooftop",
+    location: "G67H+J39, Rue Skala",
+    category: "Essaouira",
+    rating: 4.6,
+    reviews: 13,
+    description: "Perfect place to eat and chill, while enjoying the view and music.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img18,
+  },
+  {
+    id: 19,
+    name: "Mega Loft",
+    location: "35 Av. de l'Istiqlal",
+    category: "Essaouira",
+    rating: 4.1,
+    reviews: 1300,
+    description: "Amazing views of the city, great drinks and snacks, very friendly staff.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img19,
+  },
+  {
+    id: 20,
+    name: "La Coupole Essaouira Beach",
+    location: "50 Av. Mohammed V",
+    category: "Essaouira",
+    rating: 4.5,
+    reviews: 1800,
+    description: "Friendly rooftop resto bar with a fantastic view of the sunset.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img20,
+  },
+  {
+    id: 21,
+    name: "Salut Maroc",
+    location: "32 Rue Ibn Rochd",
+    category: "Essaouira",
+    rating: 4.1,
+    reviews: 1300,
+    description: "Live music in the evenings on the rooftop overlooking the ocean.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img21,
+  },
+  {
+    id: 22,
+    name: "Taros",
+    location: "Place Moulay Hassan",
+    category: "Essaouira",
+    rating: 3.6,
+    reviews: 2500,
+    description: "Large stylish terrace with panoramic sunset views.",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img22,
+  },
+  {
+    id: 23,
+    name: "La Rencontre",
+    location: "88 Rue Laalouj",
+    category: "Essaouira",
+    rating: 4.5,
+    reviews: 301,
+    description: "Amazing view, delicious food and the staff are incredibly friendly!",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img23,
+  },
+  {
+    id: 24,
+    name: "Palazzo Desdemona",
+    location: "12-14 Rue Youssef El Fassi",
+    category: "Essaouira",
+    rating: 4.4,
+    reviews: 264,
+    description: "The rooftop has great views and has good food and drinks too!",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img25,
+  },
+  {
+    id: 25,
+    name: "Ocean Vagabond",
+    location: "Boulevard Mohammed VI",
+    category: "Essaouira",
+    rating: 4.4,
+    reviews: 1300,
+    description: "Great food, reasonable prices, wonderful terrace, stunning view!",
+    dineIn: true,
+    takeaway: false,
+    delivery: false,
+    image: img27,
   },
 ];

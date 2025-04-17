@@ -23,26 +23,15 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+    
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <div><FooterLink href="/about">About Us</FooterLink></div>
-              <div><FooterLink href="/map">Rooftop Map</FooterLink></div>
-              <div><FooterLink href="/events">Events</FooterLink></div>
-              <div><FooterLink href="/blog">Blog</FooterLink></div>
+              
             </div>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Connect</h4>
-            <div className="space-y-2">
-              <div><FooterLink href="/contact">Contact Us</FooterLink></div>
-              <div><FooterLink href="https://instagram.com">Instagram</FooterLink></div>
-              <div><FooterLink href="https://facebook.com">Facebook</FooterLink></div>
-              <div><FooterLink href="https://twitter.com">Twitter</FooterLink></div>
-            </div>
+            
           </div>
         </div>
 

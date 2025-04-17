@@ -12,7 +12,7 @@ const TopRooftops = () => {
     : rooftops.filter((rooftop) => rooftop.category === activeTab);
 
   return (
-    <section className="py-16 px-4 md:px-8">
+    <section id="rooftop" className="py-16 px-4 md:px-8">
       <h2 className="text-3xl font-bold text-center mb-8">Top Rooftops</h2>
 
       {/* Tabs for Filtering */}
@@ -63,9 +63,9 @@ const TopRooftops = () => {
 
       {/* Plan Your Trip Button */}
       <div className="text-center mt-8">
-        <button className="px-6 py-3 bg-green-500 text-white rounded-lg text-lg hover:bg-green-600">
+        {/* <button className="px-6 py-3 bg-green-500 text-white rounded-lg text-lg hover:bg-green-600">
           Plan Your Trip
-        </button>
+        </button> */}
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen ">
+    <section id="home" className="relative h-screen ">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center animate-fade-in"
@@ -26,7 +26,7 @@ export default function Hero() {
           {/* Logo/Brand */}
           <div className="mb-8">
             <h1 className="text-7xl md:text-8xl font-normal text-white tracking-wide mb-4 chewy-regular ">
-              ROOFTOP MARRAKECH
+              ROOFTOP MOROCCO
             </h1>
             <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
           </div>
